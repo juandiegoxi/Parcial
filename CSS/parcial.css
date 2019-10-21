@@ -1,0 +1,209 @@
+body{
+    font-family: 'Zhi Mang Xing', cursive;
+    background: darkslateblue;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: ghostwhite;
+    width: 100%;
+    max-width: 1000px; /*response*/
+    margin: auto auto; /*Auto=Center in the page*/
+    
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    font-size: small;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.menu li a:hover{
+    background: darkslategray;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1{
+    color: rgb(95, 95, 95);
+}
+
+img{
+    margin: none;
+    padding: 0;
+    padding-bottom: 20px;
+    width: 150px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    background: darkslateblue;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+header{
+    background: ghostwhite;
+    color: black;
+}
+
+.main{
+    background: #fff;
+    width: 70%;
+    float: left;
+}
+
+article{
+    background: #fff;
+    float: left;
+    font-size: small;
+    padding: 20px;
+    text-align: justify;
+}
+
+aside{
+    background: darkslateblue;
+    color: white;
+    padding: 20px;
+    width: 30%;
+    float: left;
+}
+
+aside p{
+    font-size: smaller;
+    border-bottom: 1px solid rgba(241, 248, 248, 0.664);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+aside p a{
+    color:white;
+    text-decoration: none;
+}
+
+aside p a:hover{
+    color: rgba(241, 248, 248, 0.664);
+}
+
+.p1{
+padding-top: 8px;
+padding-bottom: 8px;
+border-bottom: none;
+}
+
+h3{
+    color: darkmagenta;
+    border-bottom: 2px solid darkmagenta;
+}
+
+h2{
+    background: blue;
+}
+
+
+footer{
+    width: 70%;
+    clear: both;
+    background: white;
+    padding: 20px;
+    color: black;
+    font-size: smaller;
+    text-align: center;
+}
+
+.box1 {
+    background: whitesmoke;
+    width: 200px;
+    margin: 20px 10px 5px 0px; /*margin of the box
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 0px;*/
+    padding: 60px; /*internal margin*/
+    border: 15px ridge green;
+}
+
+.box2 {
+    background: yellowgreen;
+    width: 200px;
+    margin: 20px 10px 5px 0px; /*margin of the box
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 0px;*/
+    padding: 50px; /*internal margin*/
+    border: 15px outset slateblue;
+    display: inline-block;
+}
+
+.btn {
+    background: white;
+    color: red;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block; /*separate between buttons*/
+    margin: 0px 10px;
+}
+
+.extra-big {
+    font-size: 20px;
+    padding: 25px 30px;
+    border: 10px double red;
+    border-radius: 100px;
+}
+
+.orange {background: white;}
+
+.border-radius {
+    border-radius: 100px;
+}
+
+@keyframes movement {
+    from{transform: translate(0px);}
+    to{transform: translate(200px);}
+
+}
+
+.mover:hover{
+width: 200px;
+height: 200px;
+background: white;
+animation: movement 10s ease infinite;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background: black;
+    }
+
+    .main {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
